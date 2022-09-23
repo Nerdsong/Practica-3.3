@@ -30,6 +30,10 @@ class Guitarra{
         }
     }
 
+    getVidaUtilCuerdas(){
+        return this.#vidaUtilCuerdas
+    }
+
     setNombreGuitarra(nuevoNombre){
         this.#nombreGuitarra = nuevoNombre;
     }
@@ -43,13 +47,19 @@ class Guitarra{
         this.#sonido = nuevoSonido;
     }
 
+    getSonido(){
+        return this.#sonido 
+    }
+
+    setColorGuitarra(nuevoColor){
+        this.#color = nuevoColor;
+    }
+
     getColorGuitarra(){
         return this.#color;
     }
     
-    setColorGuitarra(nuevoColor){
-        this.#color = nuevoColor;
-    }
+    
 }
 
 module.exports = Guitarra;

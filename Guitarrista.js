@@ -24,10 +24,6 @@ class Guitarrista{
         this.#guitarraEnUso = guitarraEnUso;
     }
 
-    getEstiloMusical(){
-        return this.#estilo;
-    }
-
     setNombreGuitarrista(nuevoNombre){
         this.#nombre = nuevoNombre;
     }
@@ -36,10 +32,31 @@ class Guitarrista{
         return this.#nombre;
     }
 
+    setAniosDeExperiencia(anios){
+        this.#aniosDeExperiencia = anios; 
+    }
+
+    getAniosDeExperiencia(){
+        return this.#aniosDeExperiencia
+    }
+
+    setNuevoEstiloMusical(nuevoEstilo){
+        this.#estilo = nuevoEstilo;
+    }
+
+    getEstiloMusical(){
+        return this.#estilo;
+    }
+
+
     getGuitarraEnUso(){
         return this.#guitarraEnUso;
     }
 
+    /**
+     * Esta función es un setter para el estado guitarraEnUso del Guitarrista
+     * @param {Guitarra} guitarraAUsar 
+     */
     agarraUnaGuitarra(guitarraAUsar){
         this.#guitarraEnUso = guitarraAUsar;
     }
